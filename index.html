@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Field" id="Field">
+        <h1 id="header">Kleines 1x1</h1>
+        <br>
+        <br>
+        <button class="start" id="start">start</button>
+        <div class="question"> 
+            <div class="minescroll">
+                <button id="Joker">JOKER</button>
+                <h3 id="clock">00:00</h3>
+            </div>
+            <h2 id="task">7 * 8</h2>
+            
+            <input type="text" class="input" id="input" placeholder="Ergebnis eingeben" spellcheck="false">
+            <div id="btns">
+            </div>
+            <button class="next" id="next-btn">weiter</button>
+        </div>
+        <h4 id="progress-display">0%</h4>
+        <div class="container" id="transform-bar">
+            <div class="progress-bar" id="progress-bar">
+
+            </div>
+        </div>
+    </div>
+        <div class="result-box", id="result-box">
+            <h2>Ergebnis</h2>
+            <div class="precentage-container">
+                <div class="circular-progress">
+                    <span class="progress-value">0%</span>
+                </div>
+
+                <span class="score-text" id="score">Du hast 1 von 5 richtig!</span>
+                <span class="score-text" id="timescore">benötigte Zeit: 00:00</span>
+                <span class="score-text" id="jkscore">Joker: 1+1</span>
+            </div>
+            <div class="buttons">
+                <button class="tryAgain-btn", id="tryAgainbtn">Neu starten</button>
+            </div>
+        </div>
+
+    
+    <script src="script.js" type="module"></script>    
+</body>
+</html>
