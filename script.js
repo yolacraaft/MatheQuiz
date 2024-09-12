@@ -62,8 +62,6 @@ function showQuestions(){
 
     resetState();
     updatebar();
-    console.log("----");
-    console.log(currentQuestionBlock + " " + arr[currentQuestionIndex]);
     let currentQuestion = questions[currentQuestionBlock].tasks[arr[currentQuestionIndex]];
     let type = questions[currentQuestionBlock].type;
     console.log(currentQuestion);
@@ -78,7 +76,6 @@ function showQuestions(){
    
 
     if(type == 1){
-        console.log("beta: " + currentQuestion.result);
         nextButton.disabled = false;
         input.style.display = "inline";
         tracknextbuttoninput(currentQuestion.result);
@@ -149,11 +146,9 @@ function tracknextbuttoninput(y) {
 }
 
 function handleClick() {
-    console.log("into: y=" + inpcorrect + ", inp: " + input.value);
     nextButton.removeEventListener("click", handleClick);
     if(input.value != inpcorrect){
         alive = false;
-        console.log("faliled");
     }else{
         score++;
     }
