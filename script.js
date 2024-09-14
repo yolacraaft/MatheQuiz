@@ -1,4 +1,4 @@
-import { questions } from './data.js';
+import { questions100 } from './data100.js';
 
 const startBtn = document.getElementById("start");
 const header = document.getElementById("header");
@@ -8,32 +8,51 @@ const nextButton = document.getElementById("next-btn");
 const bar = document.getElementById("progress-bar");
 const dsp = document.getElementById("progress-display");
 const joker = document.getElementById("Joker");
+const lvl1btn = document.getElementById("level-button1");
+const lvl2btn = document.getElementById("level-button2");
+const lvl3btn = document.getElementById("level-button3");
+const lvl4btn = document.getElementById("level-button4");
+const lvl5btn = document.getElementById("level-button5");
+const lvlcontainer = document.getElementById("lvl");
+const answerButtons = document.getElementById("btns");
+const tb = document.getElementById("transform-bar");
 let time = 1;
 let currentQuestionIndex = 0;
 let currentQuestionBlock = 0;
-let tasksperblock = 9;
-let blocks = 10;
+let questions;
+let tasksperblock;
+let blocks;
 let alive = true;
 let score = 0;
-let total = 100;
+let total;
 let finaltime = "";
 let arr;
 let inpcorrect = 0;
 let jkused = false;
 let jkquestion;
 let jkquestionres;
-const answerButtons = document.getElementById("btns");
-const tb = document.getElementById("transform-bar");
 
 
 startBtn.addEventListener("click", startQuiz);
 
 
 function startQuiz(){
-    joker.addEventListener("click", handleJoker);
-    generatearray();
+    lvlcontainer.style.display = "inline";
     startBtn.style.display = "none";
     header.style.display = "none";
+    lvl5btn.addEventListener("click", ()=>{
+        questions = questions100;
+        tasksperblock = questions[0].tasks.length - 1;
+        blocks = questions.length;
+        total= 100;
+        startwithquestions();
+        lvlcontainer.style.display = "none";
+    });
+}
+
+function startwithquestions(){
+    joker.addEventListener("click", handleJoker);
+    generatearray();
     clock.style.display = "block";
     task.style.display = "block";
     nextButton.style.display = "inline";
@@ -43,6 +62,10 @@ function startQuiz(){
     dsp.style.display = "block";
     tb.style.background = "#383838";
 }
+
+
+
+
 function updatebar(){
     let progress = score / total;
     progress = Math.floor(progress * 100);
@@ -143,22 +166,35 @@ function clockrun(){
 function tracknextbuttoninput(y) {
     inpcorrect = y;
     nextButton.addEventListener("click", handleClick);
+
+    input.addEventListener('keypress', Enter);
+}
+
+function Enter(event){
+    if (event.key === 'Enter') {
+        handleClick();
+    }
 }
 
 function handleClick() {
-    nextButton.removeEventListener("click", handleClick);
-    if(input.value != inpcorrect){
-        alive = false;
+    if(input.value === ""){
+
     }else{
-        score++;
-    }
-    input.value = "";
-    input.style.display = "none";
-    if(alive){
-        showQuestions();
-    }else{
-        task.innerText = "Game Over!";
-        showresults();
+        nextButton.removeEventListener("click", handleClick);
+        input.removeEventListener("keypress", Enter);
+        if(input.value != inpcorrect){
+            alive = false;
+        }else{
+            score++;
+        }
+        input.value = "";
+        input.style.display = "none";
+        if(alive){
+            showQuestions();
+        }else{
+            task.innerText = "Game Over!";
+            showresults();
+        }
     }
 }
 
