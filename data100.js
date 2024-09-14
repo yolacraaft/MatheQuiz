@@ -564,7 +564,7 @@ export let questions100 = [
             {
                 task: "10·4",
                 result: "40"
-            },,
+            },
             {
                 task: "5·3",
                 result: "15"
