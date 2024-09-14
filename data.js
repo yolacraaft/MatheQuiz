@@ -32,7 +32,7 @@ export const questions = [
             },
             {
                 task: "7·8",
-                result: "54"
+                result: "56"
             },
             {
                 task: "10·7",
@@ -144,7 +144,7 @@ export const questions = [
         tasks: [
             {
                 task: "8·7",
-                result: "54"
+                result: "56"
             },
             {
                 task: "6·8",
@@ -235,61 +235,61 @@ export const questions = [
             {
                 task: "6·1",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "6", correct: "true"},
+                    { text: "7", correct: "false"},
+                    { text: "4", correct: "false"},
+                    { text: "9", correct: "false"}
                 ]
             },
             {
                 task: "9·10",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "90", correct: "true"},
+                    { text: "9", correct: "false"},
+                    { text: "19", correct: "false"},
+                    { text: "98", correct: "false"}
                 ]
             },
             {
                 task: "7·2",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "14", correct: "true"},
+                    { text: "24", correct: "false"},
+                    { text: "42", correct: "false"},
+                    { text: "49", correct: "false"}
                 ]
             },
             {
                 task: "9·1",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "9", correct: "true"},
+                    { text: "6", correct: "false"},
+                    { text: "10", correct: "false"},
+                    { text: "8", correct: "false"}
                 ]
             },
             {
                 task: "9·4",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "36", correct: "true"},
+                    { text: "63", correct: "false"},
+                    { text: "13", correct: "false"},
+                    { text: "40", correct: "false"}
                 ]
             },
             {
                 task: "7·9",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "63", correct: "true"},
+                    { text: "71", correct: "false"},
+                    { text: "16", correct: "false"},
+                    { text: "45", correct: "false"}
                 ]
             },
             {
                 task: "2·2",
                 result: [
-                    { text: "X", correct: "true"},
+                    { text: "4", correct: "true"},
                     { text: "X", correct: "false"},
                     { text: "X", correct: "false"},
                     { text: "X", correct: "false"}
@@ -298,28 +298,28 @@ export const questions = [
             {
                 task: "5·6",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "30", correct: "true"},
+                    { text: "40", correct: "false"},
+                    { text: "15", correct: "false"},
+                    { text: "11", correct: "false"}
                 ]
             },
             {
                 task: "1·8",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "8", correct: "true"},
+                    { text: "6", correct: "false"},
+                    { text: "10", correct: "false"},
+                    { text: "9", correct: "false"}
                 ]
             },
             {
                 task: "9·6",
                 result: [
-                    { text: "X", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "54", correct: "true"},
+                    { text: "34", correct: "false"},
+                    { text: "15", correct: "false"},
+                    { text: "27", correct: "false"}
                 ]
             }
         ]
@@ -374,7 +374,7 @@ export const questions = [
         tasks: [
             {
                 task: "8·8",
-                result: "X"
+                result: "64"
             },
             {
                 task: "1·7",
