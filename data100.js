@@ -290,9 +290,9 @@ export let questions100 = [
                 task: "2·2",
                 result: [
                     { text: "4", correct: "true"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"},
-                    { text: "X", correct: "false"}
+                    { text: "8", correct: "false"},
+                    { text: "2", correct: "false"},
+                    { text: "16", correct: "false"}
                 ]
             },
             {
@@ -512,7 +512,7 @@ export let questions100 = [
                 result: [
                     { text: "4", correct: "false"},
                     { text: "7", correct: "false"},
-                    { text: "4", correct: "false"},
+                    { text: "6", correct: "false"},
                     { text: "8", correct: "true"}
                 ]
             },
